@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{068A784E-B77A-474E-AA53-4A1B1D0FBC84}</ProjectGuid>
+    <ProjectGuid>{DAB0A723-8AE4-4197-BCAF-4D7DE65A9DA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Dominio_LibCalc</RootNamespace>

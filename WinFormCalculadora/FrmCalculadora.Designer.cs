@@ -4,14 +4,14 @@ namespace WinFormCalculadora
     partial class FrmCalculadora
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,269 +21,387 @@ namespace WinFormCalculadora
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnPunto = new System.Windows.Forms.Button();
+            this.Btn8 = new System.Windows.Forms.Button();
+            this.Btn9 = new System.Windows.Forms.Button();
+            this.BtnIgual = new System.Windows.Forms.Button();
+            this.Btn0 = new System.Windows.Forms.Button();
+            this.Btn7 = new System.Windows.Forms.Button();
+            this.Btn6 = new System.Windows.Forms.Button();
+            this.Btn5 = new System.Windows.Forms.Button();
+            this.Btn4 = new System.Windows.Forms.Button();
+            this.Btn3 = new System.Windows.Forms.Button();
+            this.Btn2 = new System.Windows.Forms.Button();
+            this.Btn1 = new System.Windows.Forms.Button();
             this.txtDisplay = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btnResta = new System.Windows.Forms.Button();
-            this.btnMultiplicacion = new System.Windows.Forms.Button();
-            this.btnDivision = new System.Windows.Forms.Button();
-            this.btnSuma = new System.Windows.Forms.Button();
-            this.btnIgual = new System.Windows.Forms.Button();
-            this.btnSigno = new System.Windows.Forms.Button();
-            this.btnPunto = new System.Windows.Forms.Button();
-            this.btn0 = new System.Windows.Forms.Button();
-            this.btnAC = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.BtnSuma = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnDivision = new System.Windows.Forms.Button();
+            this.BtnMulti = new System.Windows.Forms.Button();
+            this.BtnResta = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fondoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.botonesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LbMemory = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btClear = new System.Windows.Forms.Button();
+            this.btSimbolo = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.BtnPunto);
+            this.groupBox1.Controls.Add(this.Btn8);
+            this.groupBox1.Controls.Add(this.Btn9);
+            this.groupBox1.Controls.Add(this.BtnIgual);
+            this.groupBox1.Controls.Add(this.Btn0);
+            this.groupBox1.Controls.Add(this.Btn7);
+            this.groupBox1.Controls.Add(this.Btn6);
+            this.groupBox1.Controls.Add(this.Btn5);
+            this.groupBox1.Controls.Add(this.Btn4);
+            this.groupBox1.Controls.Add(this.Btn3);
+            this.groupBox1.Controls.Add(this.Btn2);
+            this.groupBox1.Controls.Add(this.Btn1);
+            this.groupBox1.Location = new System.Drawing.Point(15, 82);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(182, 253);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Numeros";
+            // 
+            // BtnPunto
+            // 
+            this.BtnPunto.Location = new System.Drawing.Point(64, 193);
+            this.BtnPunto.Name = "BtnPunto";
+            this.BtnPunto.Size = new System.Drawing.Size(52, 52);
+            this.BtnPunto.TabIndex = 8;
+            this.BtnPunto.Text = ".";
+            this.BtnPunto.UseVisualStyleBackColor = true;
+            this.BtnPunto.Click += new System.EventHandler(this.BtnPunto_Click);
+            // 
+            // Btn8
+            // 
+            this.Btn8.Location = new System.Drawing.Point(64, 19);
+            this.Btn8.Name = "Btn8";
+            this.Btn8.Size = new System.Drawing.Size(52, 52);
+            this.Btn8.TabIndex = 7;
+            this.Btn8.Text = "8";
+            this.Btn8.UseVisualStyleBackColor = true;
+            this.Btn8.Click += new System.EventHandler(this.Btn8_Click);
+            // 
+            // Btn9
+            // 
+            this.Btn9.Location = new System.Drawing.Point(122, 19);
+            this.Btn9.Name = "Btn9";
+            this.Btn9.Size = new System.Drawing.Size(52, 52);
+            this.Btn9.TabIndex = 2;
+            this.Btn9.Text = "9";
+            this.Btn9.UseVisualStyleBackColor = true;
+            this.Btn9.Click += new System.EventHandler(this.Btn9_Click);
+            // 
+            // BtnIgual
+            // 
+            this.BtnIgual.Location = new System.Drawing.Point(122, 193);
+            this.BtnIgual.Name = "BtnIgual";
+            this.BtnIgual.Size = new System.Drawing.Size(52, 52);
+            this.BtnIgual.TabIndex = 1;
+            this.BtnIgual.Text = "=";
+            this.BtnIgual.UseVisualStyleBackColor = true;
+            this.BtnIgual.Click += new System.EventHandler(this.BtnIgual_Click);
+            // 
+            // Btn0
+            // 
+            this.Btn0.Location = new System.Drawing.Point(6, 193);
+            this.Btn0.Name = "Btn0";
+            this.Btn0.Size = new System.Drawing.Size(52, 52);
+            this.Btn0.TabIndex = 0;
+            this.Btn0.Text = "0";
+            this.Btn0.UseVisualStyleBackColor = true;
+            this.Btn0.Click += new System.EventHandler(this.Btn0_Click);
+            // 
+            // Btn7
+            // 
+            this.Btn7.Location = new System.Drawing.Point(6, 19);
+            this.Btn7.Name = "Btn7";
+            this.Btn7.Size = new System.Drawing.Size(52, 52);
+            this.Btn7.TabIndex = 6;
+            this.Btn7.Text = "7";
+            this.Btn7.UseVisualStyleBackColor = true;
+            this.Btn7.Click += new System.EventHandler(this.Btn7_Click);
+            // 
+            // Btn6
+            // 
+            this.Btn6.Location = new System.Drawing.Point(122, 77);
+            this.Btn6.Name = "Btn6";
+            this.Btn6.Size = new System.Drawing.Size(52, 52);
+            this.Btn6.TabIndex = 5;
+            this.Btn6.Text = "6";
+            this.Btn6.UseVisualStyleBackColor = true;
+            this.Btn6.Click += new System.EventHandler(this.Btn6_Click);
+            // 
+            // Btn5
+            // 
+            this.Btn5.Location = new System.Drawing.Point(64, 77);
+            this.Btn5.Name = "Btn5";
+            this.Btn5.Size = new System.Drawing.Size(52, 52);
+            this.Btn5.TabIndex = 4;
+            this.Btn5.Text = "5";
+            this.Btn5.UseVisualStyleBackColor = true;
+            this.Btn5.Click += new System.EventHandler(this.Btn5_Click);
+            // 
+            // Btn4
+            // 
+            this.Btn4.Location = new System.Drawing.Point(6, 77);
+            this.Btn4.Name = "Btn4";
+            this.Btn4.Size = new System.Drawing.Size(52, 52);
+            this.Btn4.TabIndex = 3;
+            this.Btn4.Text = "4";
+            this.Btn4.UseVisualStyleBackColor = true;
+            this.Btn4.Click += new System.EventHandler(this.Btn4_Click);
+            // 
+            // Btn3
+            // 
+            this.Btn3.Location = new System.Drawing.Point(122, 135);
+            this.Btn3.Name = "Btn3";
+            this.Btn3.Size = new System.Drawing.Size(52, 52);
+            this.Btn3.TabIndex = 2;
+            this.Btn3.Text = "3";
+            this.Btn3.UseVisualStyleBackColor = true;
+            this.Btn3.Click += new System.EventHandler(this.Btn3_Click);
+            // 
+            // Btn2
+            // 
+            this.Btn2.Location = new System.Drawing.Point(64, 135);
+            this.Btn2.Name = "Btn2";
+            this.Btn2.Size = new System.Drawing.Size(52, 52);
+            this.Btn2.TabIndex = 1;
+            this.Btn2.Text = "2";
+            this.Btn2.UseVisualStyleBackColor = true;
+            this.Btn2.Click += new System.EventHandler(this.Btn2_Click);
+            // 
+            // Btn1
+            // 
+            this.Btn1.Location = new System.Drawing.Point(6, 135);
+            this.Btn1.Name = "Btn1";
+            this.Btn1.Size = new System.Drawing.Size(52, 52);
+            this.Btn1.TabIndex = 0;
+            this.Btn1.Text = "1";
+            this.Btn1.UseVisualStyleBackColor = true;
+            this.Btn1.Click += new System.EventHandler(this.Btn1_Click);
             // 
             // txtDisplay
             // 
-            this.txtDisplay.Location = new System.Drawing.Point(12, 15);
+            this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisplay.Location = new System.Drawing.Point(15, 27);
+            this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDisplay.Size = new System.Drawing.Size(172, 20);
-            this.txtDisplay.TabIndex = 0;
+            this.txtDisplay.Size = new System.Drawing.Size(254, 49);
+            this.txtDisplay.TabIndex = 1;
             this.txtDisplay.Text = "0";
+            this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // panel1
+            // BtnSuma
             // 
-            this.panel1.Controls.Add(this.btnSigno);
-            this.panel1.Controls.Add(this.btnPunto);
-            this.panel1.Controls.Add(this.btn0);
-            this.panel1.Controls.Add(this.btn3);
-            this.panel1.Controls.Add(this.btn2);
-            this.panel1.Controls.Add(this.btn1);
-            this.panel1.Controls.Add(this.btn6);
-            this.panel1.Controls.Add(this.btn5);
-            this.panel1.Controls.Add(this.btn4);
-            this.panel1.Controls.Add(this.btn9);
-            this.panel1.Controls.Add(this.btn8);
-            this.panel1.Controls.Add(this.btn7);
-            this.panel1.Location = new System.Drawing.Point(12, 41);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(135, 107);
-            this.panel1.TabIndex = 1;
+            this.BtnSuma.Location = new System.Drawing.Point(6, 19);
+            this.BtnSuma.Name = "BtnSuma";
+            this.BtnSuma.Size = new System.Drawing.Size(52, 52);
+            this.BtnSuma.TabIndex = 8;
+            this.BtnSuma.Text = "+";
+            this.BtnSuma.UseVisualStyleBackColor = true;
+            this.BtnSuma.Click += new System.EventHandler(this.BtnSuma_Click);
             // 
-            // btn3
+            // groupBox2
             // 
-            this.btn3.Location = new System.Drawing.Point(92, 53);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(40, 23);
-            this.btn3.TabIndex = 10;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.groupBox2.Controls.Add(this.BtnDivision);
+            this.groupBox2.Controls.Add(this.BtnSuma);
+            this.groupBox2.Controls.Add(this.BtnMulti);
+            this.groupBox2.Controls.Add(this.BtnResta);
+            this.groupBox2.Location = new System.Drawing.Point(204, 82);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(65, 253);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Operador";
             // 
-            // btn2
+            // BtnDivision
             // 
-            this.btn2.Location = new System.Drawing.Point(49, 53);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(40, 23);
-            this.btn2.TabIndex = 9;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.BtnDivision.Location = new System.Drawing.Point(6, 193);
+            this.BtnDivision.Name = "BtnDivision";
+            this.BtnDivision.Size = new System.Drawing.Size(52, 52);
+            this.BtnDivision.TabIndex = 9;
+            this.BtnDivision.Text = "/";
+            this.BtnDivision.UseVisualStyleBackColor = true;
+            this.BtnDivision.Click += new System.EventHandler(this.BtnDivision_Click);
             // 
-            // btn1
+            // BtnMulti
             // 
-            this.btn1.Location = new System.Drawing.Point(3, 53);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(40, 23);
-            this.btn1.TabIndex = 8;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.BtnMulti.Location = new System.Drawing.Point(6, 135);
+            this.BtnMulti.Name = "BtnMulti";
+            this.BtnMulti.Size = new System.Drawing.Size(52, 52);
+            this.BtnMulti.TabIndex = 4;
+            this.BtnMulti.Text = "*";
+            this.BtnMulti.UseVisualStyleBackColor = true;
+            this.BtnMulti.Click += new System.EventHandler(this.BtnMulti_Click);
             // 
-            // btn6
+            // BtnResta
             // 
-            this.btn6.Location = new System.Drawing.Point(92, 28);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(40, 23);
-            this.btn6.TabIndex = 7;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.BtnResta.Location = new System.Drawing.Point(6, 77);
+            this.BtnResta.Name = "BtnResta";
+            this.BtnResta.Size = new System.Drawing.Size(52, 52);
+            this.BtnResta.TabIndex = 3;
+            this.BtnResta.Text = "-";
+            this.BtnResta.UseVisualStyleBackColor = true;
+            this.BtnResta.Click += new System.EventHandler(this.BtnResta_Click);
             // 
-            // btn5
+            // menuStrip1
             // 
-            this.btn5.Location = new System.Drawing.Point(49, 28);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(40, 23);
-            this.btn5.TabIndex = 6;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(287, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btn4
+            // fileToolStripMenuItem
             // 
-            this.btn4.Location = new System.Drawing.Point(3, 28);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(40, 23);
-            this.btn4.TabIndex = 5;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.restartToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
-            // btn9
+            // restartToolStripMenuItem
             // 
-            this.btn9.Location = new System.Drawing.Point(92, 3);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(40, 23);
-            this.btn9.TabIndex = 4;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
-            // btn8
+            // editToolStripMenuItem
             // 
-            this.btn8.Location = new System.Drawing.Point(49, 3);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(40, 23);
-            this.btn8.TabIndex = 3;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.colorToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
             // 
-            // btn7
+            // colorToolStripMenuItem
             // 
-            this.btn7.Location = new System.Drawing.Point(3, 3);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(40, 23);
-            this.btn7.TabIndex = 2;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fondoToolStripMenuItem,
+            this.botonesToolStripMenuItem,
+            this.textoToolStripMenuItem});
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.colorToolStripMenuItem.Text = "Color";
             // 
-            // btnResta
+            // fondoToolStripMenuItem
             // 
-            this.btnResta.Location = new System.Drawing.Point(154, 93);
-            this.btnResta.Name = "btnResta";
-            this.btnResta.Size = new System.Drawing.Size(31, 23);
-            this.btnResta.TabIndex = 2;
-            this.btnResta.Text = "-";
-            this.btnResta.UseVisualStyleBackColor = true;
-            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            this.fondoToolStripMenuItem.Name = "fondoToolStripMenuItem";
+            this.fondoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.fondoToolStripMenuItem.Text = "Fondo";
+            this.fondoToolStripMenuItem.Click += new System.EventHandler(this.fondoToolStripMenuItem_Click);
             // 
-            // btnMultiplicacion
+            // botonesToolStripMenuItem
             // 
-            this.btnMultiplicacion.Location = new System.Drawing.Point(154, 119);
-            this.btnMultiplicacion.Name = "btnMultiplicacion";
-            this.btnMultiplicacion.Size = new System.Drawing.Size(31, 23);
-            this.btnMultiplicacion.TabIndex = 3;
-            this.btnMultiplicacion.Text = "*";
-            this.btnMultiplicacion.UseVisualStyleBackColor = true;
+            this.botonesToolStripMenuItem.Name = "botonesToolStripMenuItem";
+            this.botonesToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.botonesToolStripMenuItem.Text = "Botones";
             // 
-            // btnDivision
+            // textoToolStripMenuItem
             // 
-            this.btnDivision.Location = new System.Drawing.Point(154, 145);
-            this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(31, 23);
-            this.btnDivision.TabIndex = 4;
-            this.btnDivision.Text = "/";
-            this.btnDivision.UseVisualStyleBackColor = true;
+            this.textoToolStripMenuItem.Name = "textoToolStripMenuItem";
+            this.textoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.textoToolStripMenuItem.Text = "Texto";
             // 
-            // btnSuma
+            // helpToolStripMenuItem
             // 
-            this.btnSuma.Location = new System.Drawing.Point(154, 67);
-            this.btnSuma.Name = "btnSuma";
-            this.btnSuma.Size = new System.Drawing.Size(31, 23);
-            this.btnSuma.TabIndex = 5;
-            this.btnSuma.Text = "+";
-            this.btnSuma.UseVisualStyleBackColor = true;
-            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
-            // btnIgual
+            // LbMemory
             // 
-            this.btnIgual.Location = new System.Drawing.Point(15, 148);
-            this.btnIgual.Name = "btnIgual";
-            this.btnIgual.Size = new System.Drawing.Size(132, 23);
-            this.btnIgual.TabIndex = 6;
-            this.btnIgual.Text = "=";
-            this.btnIgual.UseVisualStyleBackColor = true;
-            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            this.LbMemory.AutoSize = true;
+            this.LbMemory.Location = new System.Drawing.Point(216, 9);
+            this.LbMemory.Name = "LbMemory";
+            this.LbMemory.Size = new System.Drawing.Size(0, 13);
+            this.LbMemory.TabIndex = 4;
+            this.LbMemory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // btnSigno
+            // groupBox3
             // 
-            this.btnSigno.Location = new System.Drawing.Point(92, 78);
-            this.btnSigno.Name = "btnSigno";
-            this.btnSigno.Size = new System.Drawing.Size(40, 23);
-            this.btnSigno.TabIndex = 13;
-            this.btnSigno.Text = "+/-";
-            this.btnSigno.UseVisualStyleBackColor = true;
-            this.btnSigno.Click += new System.EventHandler(this.btnSigno_Click);
+            this.groupBox3.Controls.Add(this.btClear);
+            this.groupBox3.Controls.Add(this.btSimbolo);
+            this.groupBox3.Location = new System.Drawing.Point(16, 341);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(253, 78);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
-            // btnPunto
+            // btClear
             // 
-            this.btnPunto.Location = new System.Drawing.Point(49, 78);
-            this.btnPunto.Name = "btnPunto";
-            this.btnPunto.Size = new System.Drawing.Size(40, 23);
-            this.btnPunto.TabIndex = 12;
-            this.btnPunto.Text = ".";
-            this.btnPunto.UseVisualStyleBackColor = true;
-            this.btnPunto.Click += new System.EventHandler(this.btnPunto_Click);
+            this.btClear.Location = new System.Drawing.Point(63, 19);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(52, 52);
+            this.btClear.TabIndex = 11;
+            this.btClear.Text = "C";
+            this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
-            // btn0
+            // btSimbolo
             // 
-            this.btn0.Location = new System.Drawing.Point(3, 78);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(40, 23);
-            this.btn0.TabIndex = 11;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
-            // 
-            // btnAC
-            // 
-            this.btnAC.BackColor = System.Drawing.Color.MediumBlue;
-            this.btnAC.ForeColor = System.Drawing.Color.White;
-            this.btnAC.Location = new System.Drawing.Point(153, 41);
-            this.btnAC.Name = "btnAC";
-            this.btnAC.Size = new System.Drawing.Size(31, 23);
-            this.btnAC.TabIndex = 7;
-            this.btnAC.Text = "AC";
-            this.btnAC.UseVisualStyleBackColor = false;
-            this.btnAC.Click += new System.EventHandler(this.button1_Click);
+            this.btSimbolo.Location = new System.Drawing.Point(5, 20);
+            this.btSimbolo.Name = "btSimbolo";
+            this.btSimbolo.Size = new System.Drawing.Size(52, 52);
+            this.btSimbolo.TabIndex = 10;
+            this.btSimbolo.Text = "+/-";
+            this.btSimbolo.UseVisualStyleBackColor = true;
+            this.btSimbolo.Click += new System.EventHandler(this.btSimbolo_Click);
             // 
             // FrmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(89)))), ((int)(((byte)(250)))));
-            this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(197, 186);
-            this.Controls.Add(this.btnAC);
-            this.Controls.Add(this.btnIgual);
-            this.Controls.Add(this.btnSuma);
-            this.Controls.Add(this.btnDivision);
-            this.Controls.Add(this.btnMultiplicacion);
-            this.Controls.Add(this.btnResta);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(287, 441);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.LbMemory);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txtDisplay);
-            this.ForeColor = System.Drawing.Color.MediumBlue;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmCalculadora";
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmCalculadora_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,26 +409,38 @@ namespace WinFormCalculadora
 
         #endregion
 
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtDisplay;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn7;
-        private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btn5;
-        private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btn8;
-        private System.Windows.Forms.Button btnResta;
-        private System.Windows.Forms.Button btnMultiplicacion;
-        private System.Windows.Forms.Button btnDivision;
-        private System.Windows.Forms.Button btnSuma;
-        private System.Windows.Forms.Button btnIgual;
-        private System.Windows.Forms.Button btnSigno;
-        private System.Windows.Forms.Button btnPunto;
-        private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button btnAC;
+        private System.Windows.Forms.Button BtnSuma;
+        private System.Windows.Forms.Button Btn8;
+        private System.Windows.Forms.Button Btn7;
+        private System.Windows.Forms.Button Btn6;
+        private System.Windows.Forms.Button Btn5;
+        private System.Windows.Forms.Button Btn4;
+        private System.Windows.Forms.Button Btn3;
+        private System.Windows.Forms.Button Btn2;
+        private System.Windows.Forms.Button Btn1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button Btn0;
+        private System.Windows.Forms.Button Btn9;
+        private System.Windows.Forms.Button BtnIgual;
+        private System.Windows.Forms.Button BtnDivision;
+        private System.Windows.Forms.Button BtnMulti;
+        private System.Windows.Forms.Button BtnResta;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.Button BtnPunto;
+        private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
+        private System.Windows.Forms.Label LbMemory;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fondoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem botonesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem textoToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btClear;
+        private System.Windows.Forms.Button btSimbolo;
     }
 }
 

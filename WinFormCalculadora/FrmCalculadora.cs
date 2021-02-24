@@ -13,82 +13,132 @@ namespace WinFormCalculadora
 {
     public partial class FrmCalculadora : Form
     {
-        //var de class abrstract para aceder a OTDAS las operaciones
-        Operacion oper=null;
-
+        Operacion oper = null;
         string operador = "";
-        //opoerandos
         private double _op1 = 0;
         private double _op2 = 0;
+        private String[] Memory = new String[10];
+        private int cont = 0;
+        private int txtSize= 14;
+        public static Color colorFondo = Color.LightGray;
+        
+
+
         public FrmCalculadora()
         {
             InitializeComponent();
+
+        }
+        public void UpdateFrm() {
+            this.BackColor = FrmCalculadora.colorFondo;
+            this.Font = (new Font("Arial", txtSize));
+
         }
 
-        private void btnSuma_Click(object sender, EventArgs e)
+        private void FrmCalculadora_Load(object sender, EventArgs e)
         {
-            //activar una bandera
-            this.operador = "+";
-            //tomamos ope1
-            this._op1 = double.Parse(txtDisplay.Text);
-            //limpiar el display
-            txtDisplay.Clear();
+            UpdateFrm();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void fondoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "1"; 
+            FrmColores ClrFondo = new FrmColores();
+            ClrFondo.SetValues(this.BackColor);
+            ClrFondo.ShowDialog();
+            this.BackColor = FrmCalculadora.colorFondo;
+
         }
 
-        private void btn2_Click(object sender, EventArgs e)
+        private void ValidInput(String input)
         {
-            txtDisplay.Text += "2";
+
+            if (LbMemory.Text != "")
+            {
+                LbMemory.Text = "";
+                txtDisplay.Text = "0";
+            }
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = input;
+            }
+            else if (input == "." && txtDisplay.Text.Contains("."))
+            {
+            }
+            else
+            {
+                txtDisplay.Text += input;
+            }
+
         }
 
-        private void btn3_Click(object sender, EventArgs e)
+        //botones numeros
+        private void Btn1_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "3";
+            ValidInput("1");
+            
         }
 
-        private void btn4_Click(object sender, EventArgs e)
+        private void Btn2_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "4";
+            ValidInput("2");
         }
 
-        private void btn5_Click(object sender, EventArgs e)
+        private void Btn3_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "5";
+            ValidInput("3");
         }
 
-        private void btn6_Click(object sender, EventArgs e)
+        private void Btn4_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "6";
+            ValidInput("4");
         }
 
-        private void btn7_Click(object sender, EventArgs e)
+        private void Btn5_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "7";
+            ValidInput("5");
         }
 
-        private void btn8_Click(object sender, EventArgs e)
+        private void Btn6_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "8";
+            ValidInput("6");
         }
 
-        private void btn9_Click(object sender, EventArgs e)
+        private void Btn7_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "9";
+            ValidInput("7");
         }
 
-        private void btnIgual_Click(object sender, EventArgs e)
+        private void Btn8_Click(object sender, EventArgs e)
         {
-            //capturamos el op2
+            ValidInput("8");
+        }
+
+        private void Btn9_Click(object sender, EventArgs e)
+        {
+            ValidInput("9");
+        }
+
+        private void Btn0_Click(object sender, EventArgs e)
+        {
+            ValidInput("0");
+        }
+
+        private void BtnPunto_Click(object sender, EventArgs e)
+        {
+            ValidInput(".");
+        }
+
+        // Operaciones igual, suma, resta, multiplicacion, division
+
+        private void BtnIgual_Click(object sender, EventArgs e)
+        {
+            //capturamos op2
             this._op2 = double.Parse(txtDisplay.Text);
-            //instanciamos la clase de la ioperacion seleccionada
+            //instanciamos la clase de la operacion seleccionada
             switch (this.operador)
             {
                 case "+":
-                    oper = new Suma(this._op1, this._op2); 
+                    oper = new Suma(this._op1, this._op2);
                     break;
                 case "-":
                     oper = new Resta(this._op1, this._op2);
@@ -103,45 +153,80 @@ namespace WinFormCalculadora
                     operador = "";
                     break;
             }
-           
+            //se guarda en memoria
+            LbMemory.Text = _op1 + " " + operador + " " + _op2 + " =";
             //ejecutamos la operacion
             txtDisplay.Text = oper.ejecutar().ToString();
-
-            //limpiar la operador =
             this.operador = "";
+            cont++;
         }
-
-        private void btnResta_Click(object sender, EventArgs e)
+        private void BtnSuma_Click(object sender, EventArgs e)
         {
-            //activar una bandera
-            this.operador = "-";
-            //tomamos ope1
+            operador = "+";
             this._op1 = double.Parse(txtDisplay.Text);
-            //limpiar el display
+            //limpiar display
+            txtDisplay.Clear();
+        }
+        private void BtnResta_Click(object sender, EventArgs e)
+        {
+            operador = "-";
+            this._op1 = double.Parse(txtDisplay.Text);
+            //limpiar display
             txtDisplay.Clear();
         }
 
-        private void btn0_Click(object sender, EventArgs e)
+        private void BtnMulti_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text += "0";
+            operador = "*";
+            this._op1 = double.Parse(txtDisplay.Text);
+            //limpiar display
+            txtDisplay.Clear();
         }
 
-        private void btnPunto_Click(object sender, EventArgs e)
+        private void BtnDivision_Click(object sender, EventArgs e)
         {
-            //agregamos el punto 
-            txtDisplay.Text += ".";
+            operador = "/";
+            this._op1 = double.Parse(txtDisplay.Text);
+            //limpiar display
+            txtDisplay.Clear();
         }
 
-        private void btnSigno_Click(object sender, EventArgs e)
+        // Reset
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //txtDisplay.Text += "-";
-            txtDisplay.Text = "-" + txtDisplay.Text; //23.54 +/- = -23.54
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //limpiamos
+            oper = null;
+            operador = "";
+            _op1 = 0;
+            _op2 = 0;
             txtDisplay.Text = "0";
+            LbMemory.Text = "";
+            cont = 0;
+        }
+
+        private void btSimbolo_Click(object sender, EventArgs e)
+        {
+            if (!(txtDisplay.Text[0] == '-'))
+            {
+                txtDisplay.Text = "-" + txtDisplay.Text;
+
+            }
+            else
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(1, 1);
+
+            }
+        }
+
+        private void btClear_Click(object sender, EventArgs e)
+        {
+            oper = null;
+            operador = "";
+            _op1 = 0;
+            _op2 = 0;
+            txtDisplay.Text = "0";
+            LbMemory.Text = "";
+            cont = 0;
+            UpdateFrm();
         }
     }
 }

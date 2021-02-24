@@ -8,11 +8,10 @@ namespace Dominio_LibCalc
 {
     public class Suma : Operacion
     {
-        public Suma(double op1, double op2) : base(op1, op2)
-        {
+        public Suma(double op1, double op2): base(op1,op2) { 
+        
         }
-        public override double ejecutar()
-        {
+        public override double ejecutar() {
             return this.Ope1 + this.Ope2;
         }
     }
